@@ -1,0 +1,48 @@
+// Quote Styles
+
+%quotes {
+  $quotesize: 125px;
+  color: $blue;
+  font-size: $quotesize;
+  font-weight: bold;
+}
+
+.openquotewrap {
+  height: 100px;
+  // height: calc($quotesize/3);
+  overflow: hidden;
+}
+
+.openquote {
+  @extend %quotes;
+}
+
+.closequote {
+  @extend %quotes;
+  text-align: right;
+}
+
+// end
+
+.reviews {
+  .fbp{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .fbc {
+    width: 45%;
+    min-width: 500px;
+  }
+
+  .quote {
+    color: $navy;
+    font-size: 20pt;
+    margin: 0 0 20px;
+  }
+
+  .reviewname {
+    color: $navy;
+    font-size: 12pt;
+  }
+}

@@ -1,0 +1,55 @@
+.download {
+  background-color: $blue;
+  max-height: 525px;
+  overflow: hidden;
+
+  .fbp {
+    padding: 0 0 0 50px;
+  }
+
+  .bndbox {
+    max-width: 1435px;
+  }
+
+  h2 {
+    color: $white;
+    text-align: left;
+  }
+
+  .wrap {
+    max-width: 75%;
+  }
+
+  p {
+    color: $white;
+    font-size: 16pt;
+    margin-bottom: 50px;
+  }
+
+  .fbc {flex: 1;}
+
+  .content img:nth-of-type(1) {
+    margin-right: 20px;
+  }
+}
+
+// Phones
+
+.phonepics img {
+  position: relative;
+}
+
+.dwnsunny {
+  margin: 100px 0 0;
+  z-index: 2;
+}
+
+.dwncloudy {
+  margin: 0 -120px -75px 0;
+  z-index: 1;
+}
+
+.dwnrainy {
+  margin: 0 0 -75px -120px;
+  z-index: 0;
+}

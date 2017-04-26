@@ -1,0 +1,198 @@
+header {
+  background-color: $blue;
+  background-image: url('../images/header_wave1.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  // .waves img {
+  //   bottom: 0;
+  //   opacity: .5;
+  //   position: absolute;
+  // }
+
+
+}
+
+nav {
+  color: $white;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 33px 30px;
+
+  %navfbchildren {
+    padding: 30px 0 0;
+  }
+
+  h1 {
+    @extend %navfbchildren;
+    flex: 1;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  a {
+    color: $white;
+    display: inline-block;
+    // flex: 1;
+    margin: auto 0;
+    padding: 0 41px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  .navicons {
+    @extend %navfbchildren;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    // margin: 0 0 0 90px;
+
+    i {
+      padding: 0 30px;
+    }
+  }
+
+  .navlinks {
+    @extend %navfbchildren;
+    flex: 6;
+    display: inline;
+    min-width: 570px;
+
+  }
+
+  .fa {
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+
+  h1 {
+    flex: 3;
+    text-align: center;
+  }
+}
+
+
+//========== First Screen ==========
+
+%crlp {
+  font-weight: bold;
+  text-align: center;
+}
+
+.firstscreen {
+
+  .fbp {
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 40vh 0 0;
+
+    .fbc {
+      flex: 1;
+      padding: 0 50px;
+      position: relative;
+    }
+  }
+
+  .wrap {position: absolute;}
+
+  .left .wrap {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .right {
+
+    .wrap {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    // DRY code for circles
+
+    p {
+      @extend %crlp;
+      color: $black;
+    }
+  }
+
+  .btnorange {
+    margin: 50px 20px 0 0;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 60px;
+    margin: 0 0 40px;
+    text-align: left;
+    text-transform: none;
+  }
+
+  p {
+    color: $white;
+  }
+}
+
+// Unique code for Circles
+
+@mixin cs($size, $bgcolor, $color, $left, $top) {
+  background-color: $bgcolor;
+  height: $size;
+  width: $size;
+  top: $top;
+  left: $left;
+  p {color: $color; line-height: $size;}
+}
+
+.circlewrap {
+  position: relative;
+
+
+  .crl {
+
+    &:nth-child(1) {@include cs(50px, $white, $blue, 310px, 75px);}
+    &:nth-child(2) {@include cs(75px, $darkblue, $white, 340px, 250px);}
+    &:nth-child(3) {@include cs(70px, $orange, $white, -100px, 300px);}
+    &:nth-child(4) {@include cs(50px, $yellow, $blue, 340px, 575px);}
+  }
+}
+
+.crl {
+  background-color: $white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.downarrow {
+  bottom: 100px;
+  left: 50%;
+  position: absolute;
+
+  .crl {@include cs(40px, $white, $orange, 0, 0);}
+
+  p {
+    @extend %crlp;
+    transform: rotate(-180deg);
+  }
+}
+
+.roundbottom {
+  background-color: $headerbottom;
+  border-radius: 50%;
+  bottom: 100px;
+  height: 100px;
+  transform: translate(0, -50%);
+  z-index: 0;
+  // position: absolute;
+}

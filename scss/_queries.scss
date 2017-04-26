@@ -1,0 +1,97 @@
+// graceful degradation
+
+@media only screen and (max-width: 1235px) {
+  .dwnrainy,
+  .dwncloudy {
+    display: none;
+  }
+
+  .dwnsunny {
+    margin: 50px;
+    position: relative;
+  }
+}
+
+
+@media only screen and (max-width: 1180px) {
+  .crl {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .widgets {
+    .leftimg,
+    .rightimg {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .download {
+    max-height: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    .right {display: none;}
+
+    .firstscreen .fbp .left {padding: 0;}
+
+    .btnwrap,
+    .wrap h2,
+    .wrap p {
+      text-align: center;
+    }
+
+    // .fbc {padding: 0;}
+
+    .firstscreen .fbp {
+      padding: 30vh 0 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .download{
+    .phonepics {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .dwlstorewrap {
+      margin-bottom: 150px;
+      text-align: center;
+    }
+
+    .wrap {max-width: none;}
+
+    .fbp {padding: 0;}
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .screenshots .fbc {
+    margin: 0;
+  }
+
+  .screenshots .fbcimg {
+    margin: 0 0 100px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+
+}
+
+// 590

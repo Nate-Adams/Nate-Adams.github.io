@@ -1,0 +1,67 @@
+.screenshots {
+
+  h3 {
+    @extend %h2extend;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .fbp {
+    flex-wrap: wrap;
+  }
+
+  .wraprev {
+    flex-wrap: wrap-reverse;
+  }
+
+  .fbc {
+    flex: 1;
+    margin: 100px 0;
+    padding: 20px;
+    min-width: 290px;
+  }
+
+  .fbcimg {
+    img {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  .temp {font-size: 20pt;}
+
+}
+
+%crlp {
+  p {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+
+.sscloud {
+  .crl {
+    @extend %crlp;
+    &:nth-child(1) {@include cs(100px, $yellow, $white, 400px, 150px);}
+    &:nth-child(2) {@include cs(90px, $blue, $white, 90px, 400px);}
+  }
+}
+
+.sssun {
+  .crl {
+    @extend %crlp;
+    &:nth-child(1) {@include cs(80px, $brightorange, $white, 400px, 150px);}
+    &:nth-child(2) {@include cs(90px, $red, $white, 90px, 400px);}
+  }
+}
+
+.ssrain {
+  .crl {
+    @extend %crlp;
+    &:nth-child(1) {@include cs(100px, $turquoise, $darkturquoise, 400px, 150px);}
+    &:nth-child(2) {@include cs(60px, $blue, $white, 95px, 400px);}
+  }
+}

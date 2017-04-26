@@ -1,0 +1,20 @@
+
+@mixin qv ($qvcolor, $max) {
+  @media only screen and (max-width: $max){
+    .querievisualizer {
+      background-color: $qvcolor;
+    }
+  }
+}
+
+.querievisualizer {
+  background-color: $red;
+  height: 5px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+@include qv($green, $break1);

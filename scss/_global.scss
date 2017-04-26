@@ -1,0 +1,95 @@
+//========== Body Styles ==========
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+//========== Header Styles ==========
+
+%header {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  @extend %header;
+  font-size: 24pt;
+}
+
+%h2extend {
+  color: $blue;
+  font-size: 28pt;
+  margin: 133px 0 30px;
+  text-align: center;
+}
+
+h2 {
+  @extend %header;
+  @extend %h2extend;
+}
+
+h3 {
+  color: $navy;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+h4 {
+  color: $grey;
+  font-size: 16pt;
+  margin: 0 0 80px;
+  text-align: center;
+}
+
+p {
+  font-size: 13pt;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+//========== Div Styles ==========
+
+.bndbox {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.fbp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertcntr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bar {
+  width: 75%;
+  border-bottom: 2px;
+  border-color: $bar;
+  border-style: solid;
+  margin: 0 auto;
+}
+
+
+// Buttons
+%btn {
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.btnorange {
+  @extend %btn;
+  background-color: $orange;
+}
+
+.btnblue {
+  @extend %btn;
+  background-color: $darkblue;
+}

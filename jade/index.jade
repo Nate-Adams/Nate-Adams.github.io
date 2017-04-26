@@ -1,0 +1,36 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Fun Weather
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
+    link(rel="stylesheet" href="../css/main.css")
+    script(src="https://use.fontawesome.com/47b7713dd3.js")
+
+  body
+    include body/_querievisualizer.jade
+    Header
+      //- .waves
+        //- img(src="../images/header_wave1.png", alt="alt")
+        //- img(src="../images/header_wave2.png", alt="alt")
+      .bndbox
+        nav
+          include body/_header.jade
+        article.firstscreen
+          include body/_firstscreen.jade
+    .roundbottom
+    .bndbox
+      article.features
+        include body/_features.jade
+      article.widgets
+        include body/_widgets.jade
+      article.screenshots
+        include body/_screenshots.jade
+      article.reviews
+        include body/_reviews.jade
+    aside.download
+      .bndbox
+        include body/_download.jade
+    article.footer
+      include body/_footer.jade
