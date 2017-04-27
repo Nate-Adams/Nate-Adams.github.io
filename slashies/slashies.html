@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+    <title>Navajo Syllable Divider</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <p>Insert the divider symbol (Try "|" or "-"):</p>
+    <input type="text" id="symbol"><br>
+    <p>Add the paragraphs that you want run:</p>
+    <textarea rows="8" cols="80" id="input"></textarea><br>
+    <!-- <form action="" id="symbolradio">
+        <div>
+            <input type="radio" name="symbol" value="|">
+        </div><div>
+        <input type="radio" name="symbol" value="-">
+    </div><div>
+        <input type="radio" name="symbol" value="other">
+    </div>
+</form><br> -->
+
+    <input type="button" onclick="divide()" value="Divide" id="dividebutton"><br>
+    <textarea rows="8" cols="80" id="output"></textarea>
+    <script src="main.js"></script>
+</body>
+
+</html>

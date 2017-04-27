@@ -1,0 +1,10 @@
+#dividebutton {
+    width: 630px;
+    height: 108px;
+    float:left;
+}
+
+#symbolradio div {
+    float:left;
+    width:200px
+}
