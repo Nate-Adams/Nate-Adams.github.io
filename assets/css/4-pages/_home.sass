@@ -1,0 +1,165 @@
+.hero
+  height: 100vh
+  max-height: 800px
+  background: url(../img/background_1.jpg) center no-repeat
+  background-size: cover
+  background-color: $backgroundcolor
+  background-blend-mode: luminosity
+
+.services
+  background-color: $maincolor
+  color: $white
+  position: relative
+
+  h2,
+  h3
+    color: $white
+
+  h2
+    margin: 0
+
+  h3
+    margin: 0 0 .4em
+
+  p
+    font-size: .85em
+
+  .headerwrap
+    display: inline-block
+    margin: 4em 0 2em
+
+  .imgwrap
+    width: 5.3125rem
+
+  .wrap
+    padding: 0 10%
+
+    &:first-of-type
+      padding: 0 0 0 10%
+
+    &:last-of-type
+      padding: 0 10% 0 0
+
+  .skillicons .col
+    // height: 0.5em
+    height: 40px
+
+    img
+      padding: 0 7.5px
+      position: relative
+
+    .first
+      padding: 0 7.5px 0 0
+
+  .marginbottom
+    padding: 50px 0
+
+#icontextpopup
+  display: inline-block
+  color: $black
+  font-weight: bold
+  background-color: $white
+  padding: 3px 10px
+  position: absolute
+  border-radius: 10px
+  z-index: 2
+
+
+
+.portfolio
+  h2
+    margin-top: 0
+
+  .topwrap
+    position: relative
+    display: block
+    margin-top: 2rem
+
+  .col
+    width: 270px
+    height: 270px
+    padding-left: 0
+    margin: 0 0 20px 20px
+    overflow: hidden
+
+  img
+    display: block
+
+  .bottomwrap
+    text-align: center
+
+  .buttonwrap
+    margin-bottom: 20px
+
+.portfoliobuttonwrap
+  float: right
+  button:active
+    color: #555
+    border-color: #bbb
+    outline: 0
+
+.portfoliotab
+  color: $black
+  border-style: none
+  &:hover,
+  &:focus
+    color: lighten($black, 50%)
+
+  &.portfoliotabactive
+    border-style: solid
+    border-color: $maincolor
+    color: darken($maincolor, 25%)
+    border-width: 2px
+    border-radius: 0
+
+
+
+.linkedin
+  background-color: $maincolor
+  padding: 30px 0
+
+  article
+    position: relative
+
+  h2,
+  h3,
+  button,
+  .linkedin-logo
+    color: white
+
+  h2
+    margin-bottom: 0
+
+  h3
+    text-transform: none
+
+  button
+    border-width: 2px
+    border-color: $white
+    border-radius: 0
+
+  .linkedin-logo
+    position: absolute
+    top: 30px
+    right: 20px
+    font-size: 5em
+
+  a
+    color: $white
+    border-radius: 0
+    border-color: $white
+    display: inline-block
+    margin-left: 0
+
+
+.about
+  background: url(../img/background_about.jpg) no-repeat bottom
+  background-size: cover
+  background-attachment: fixed
+  height: 70%
+  padding: 150px 0
+  color: $white
+
+  h2,
+    color: $white
+    margin-bottom: 0
